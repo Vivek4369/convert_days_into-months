@@ -1,0 +1,74 @@
+//Write a C program to convert a given number of days into months and days
+#include<stdio.h>
+int main()
+{
+    int a,n,y,i;
+    int flag = 0;
+    printf("Enter thr number of days\n");
+    scanf("%d",&a);
+
+    n = a;
+    y = n/365;
+    for(i = 0; i <= y; i++){
+    if(n>30){
+        flag = flag + 1;
+        n = n - 31;
+        if(n>27){
+        flag = flag + 1;
+        n = n - 28;
+        if(n>30){
+        flag = flag + 1;
+        n = n - 31;
+        if(n>29){
+        flag = flag + 1;
+        n = n - 30;
+        if(n>30){
+        flag = flag + 1;
+        n = n - 31;
+        if(n>29){
+        flag = flag + 1;
+        n = n - 30;
+        if(n>30){
+        flag = flag + 1;
+        n = n - 31;
+        if(n>30){
+        flag = flag + 1;
+        n = n - 31;
+        if(n>29){
+        flag = flag + 1;
+        n = n - 30;
+        if(n>30){
+        flag = flag + 1;
+        n = n - 31;
+        if(n>29){
+        flag = flag + 1;
+        n = n - 30;
+        if(n>30){
+        flag = flag + 1;
+        n = n - 31;
+    }
+    else printf("%d months and %d days",flag,n);
+    }
+    else printf("%d months and %d days",flag,n);
+    }
+    else printf("%d months and %d days",flag,n);
+    }
+    else printf("%d months and %d days",flag,n);
+    }
+    else printf("%d months and %d days",flag,n);
+    }
+    else printf("%d months and %d days",flag,n);
+    }
+    else printf("%d months and %d days",flag,n);
+    }
+    else printf("%d months and %d days",flag,n);
+    }
+    else printf("%d months and %d days",flag,n);
+    }
+    else printf("%d months and %d days",flag,n);
+    }
+    else printf("%d months and %d days",flag,n);
+    }
+    }
+    return 0;
+}
